@@ -59,7 +59,7 @@ nav ul li a:hover {
 .sidebar ul li a:hover {
 	background-color: white;
 	color: black;
-	padding: 10px 90px;
+	padding: 10px 30px;
 	border-radius: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 	transform: scale(1.2);
@@ -131,3 +131,60 @@ footer {
 	font-weight: 600;
 	position: relative;
 }
+
+/* Form Kontak */
+#formWA {
+	background-color: #fff;
+	padding: 30px 25px;
+	border-radius: 10px;
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+	width: 100%;
+	max-width: 500px;
+  }
+  
+  #formWA label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: bold;
+	color: #333;
+  }
+  
+  #formWA input,
+  #formWA textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+	font-size: 16px;
+  }
+  
+  #formWA input:focus,
+  #formWA textarea:focus {
+	border-color: #3a86ff;
+	outline: none;
+	box-shadow: 0 0 4px rgba(37, 211, 102, 0.3);
+  }
+  
+  #formWA button {
+	background-color: #3a86ff;
+	color: white;
+	border: none;
+	padding: 12px 25px;
+	border-radius: 6px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+
+  #formWA button:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transform: scale(1.2);
+	transition: 1s;
+  }
+  
+  #formWA button:hover {
+	background-color: #3a86ff;
+  }
+  

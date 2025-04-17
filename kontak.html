@@ -1,44 +1,61 @@
 <!DOCTYPE html>
 <html lang="id">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Halaman Web Saya</title>
-		<link rel="stylesheet" href="style.css" />
-	</head>
-	<body>
-		<header>
-			<h1>Selamat Datang di Website</h1>
-		</header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Web Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Website</h1>
+    </header>
+    
+    <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tentang.html">Tentang</a></li>
+        <li><a href="layanan.html">Layanan</a></li>
+        <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+</nav>
 
-		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="tentang.html">Tentang</a></li>
-				<li><a href="layanan.html">Layanan</a></li>
-				<li><a href="kontak.html">Kontak</a></li>
-			</ul>
-		</nav>
+<div class="container">
+    <aside class="sidebar">
+        <h2>Menu Samping</h2>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+        </ul>
+    </aside>
+    <main class="content">
+     <h2>Hubungi Kami via WhatsApp</h2>
+     <form id="formWA">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required>
+        <label for="pesan">Pesan:</label>
+        <textarea id="pesan" name="pesan" rows="5" required></textarea>
+        <button type="submit">Kirim ke WhatsApp</button>
+    </form>
+    </main>
+</div>
+<footer>
+    <p>&copy; 2025 Website Saya</p>
+</footer>
+  <script>
+    document.getElementById("formWA").addEventListener("submit", function(event) {
+      event.preventDefault();
 
-		<div class="container">
-			<aside class="sidebar">
-				<h2>Menu Samping</h2>
-				<ul>
-					<li><a href="#">Link 1</a></li>
-					<li><a href="#">Link 2</a></li>
-					<li><a href="#">Link 3</a></li>
-				</ul>
-			</aside>
+      var nama = document.getElementById("nama").value;
+      var pesan = document.getElementById("pesan").value;
 
-			<main class="content" style="padding: 80px;">
-				<h2>Kontak Kami</h2>
-				<p>Hubungi kami melalui email di info@websitesaya.com</p>
-				<p>atau telepon di 085895490988 untuk pertanyaan lebih lanjut.</p>
-			</main>
-		</div>
+      var noWA = "6285895490988";
+      
+      var teks = `Halo, saya ${nama}.%0A${pesan}`;
 
-		<footer>
-			<p>&copy; 2025 Website Saya</p>
-		</footer>
-	</body>
+      window.open(`https://wa.me/${6285895490988}?text=${teks}`, "_blank");
+    });
+  </script>
+</body>
 </html>
