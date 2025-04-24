@@ -123,6 +123,37 @@ table {
 	transition: 1s;
 }
 
+  .carousel-item img {
+    object-fit: cover;
+    height: 500px;
+    filter: brightness(0.85);
+  }
+
+  .carousel-caption {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    border-radius: 15px;
+    color: #333;
+    max-width: 600px;
+    margin: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .carousel-caption h5 {
+    font-size: 1.75rem;
+    font-weight: bold;
+  }
+
+  .carousel-caption p {
+    font-size: 1.1rem;
+  }
+
+  .carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
 footer {
 	background: #3a86ff;
 	color: white;
